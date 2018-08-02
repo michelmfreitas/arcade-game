@@ -24,8 +24,8 @@ class Character {
 class Enemy extends Character {
 
     constructor(p, sprite = 'images/enemy-bug.png', x = -100, y = (blockHeight * (Math.floor(Math.random() * 3) + 1)) - 20) {
-        this.player = p;
         super(sprite, x, y);
+        this.player = p;
         this.speed = this.randSpeed();
     }
 
